@@ -15,7 +15,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/rdp/master/start.bat?token=AQYC7PKQG5PLUCXSQIEMZC3BN4BDM -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/rdp/master/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/rdp/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/rdp/master/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/rdp/master/loop.bat?token=AQYC7PKJNE3XEFHYM3YCKQ3BN4BIQ -OutFile loop.bat
     - name: Mendownload Launcher.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/rdp/master/launcher/Node.js.lnk -OutFile Node.js.lnk
