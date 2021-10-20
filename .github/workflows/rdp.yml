@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Download Ngrok.
       run: |
-        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/Andro-IDE/as/raw/master/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/wallpaper.bat -OutFile wallpaper.bat
