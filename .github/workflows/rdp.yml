@@ -11,18 +11,18 @@ jobs:
     steps:
     - name: Download Ngrok.
       run: |
-        Invoke-WebRequest https://github.com/Andro-IDE/as/raw/master/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://github.com/NikamAniket/as/raw/master/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/NikamAniket/as/master/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/NikamAniket/as/master/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/NikamAniket/as/master/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/NikamAniket/as/master/loop.bat -OutFile loop.bat
     - name: Download Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://github.com/Andro-IDE/as/raw/master/launcher/settings.zip -OutFile settings.zip
-        Invoke-WebRequest https://github.com/Andro-IDE/as/raw/master/launcher/Android%20Studio.lnk -OutFile "Android Studio.lnk"
-        Invoke-WebRequest https://raw.githubusercontent.com/Andro-IDE/as/master/launcher/index.html -OutFile index.html
+        Invoke-WebRequest https://raw.githubusercontent.com/NikamAniket/as/master/launcher/Node.js.lnk -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/NikamAniket/as/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/NikamAniket/as/raw/master/launcher/settings.zip -OutFile settings.zip
+        Invoke-WebRequest https://github.com/NikamAniket/as/raw/master/launcher/Android%20Studio.lnk -OutFile "Android Studio.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/NikamAniket/as/master/launcher/index.html -OutFile index.html
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to Ngrok.
